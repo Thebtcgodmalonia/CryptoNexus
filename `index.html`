@@ -9,3 +9,15 @@
 </body>
 </html>
 ```
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CryptoNexus</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Welcome to CryptoNexus!</h1>
+</body>
+</html>
+```
