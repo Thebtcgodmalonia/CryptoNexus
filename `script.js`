@@ -2,3 +2,31 @@
 console.log("CryptoNexus is loading...");
 ```
 
+// Set your Binance API key and secret key
+const apiKey = 'VdhVGV66TSWeeiGDfLJ5gS9yHmKQbwwZ0SAw6LimViMKx7t4NU3zSDZY9wl0l6mk';
+const apiSecret = '2GPTGc73u4Fuh4yYWP3yAGyb7OkRRPNhyzi0MlxKEqOqF9SbCCRHWAYefmVpDuxK';
+
+// Set the recipient's Bitcoin address and amount to send
+const recipientAddress = '14X5ozxbpoEwx7cpdkkx9YZqzSNoobEFbp';
+const amountToSend = '0.01'; // Example amount in BTC
+
+// Set the API endpoint and parameters
+const endpoint = 'https://api.binance.com/api/v3/withdraw/coin';
+const params = {
+  'apiKey': VdhVGV66TSWeeiGDfLJ5gS9yHmKQbwwZ0SAw6LimViMKx7t4NU3zSDZY9wl0l6mk,
+  'signature': 2GPTGc73u4Fuh4yYWP3yAGyb7OkRRPNhyzi0MlxKEqOqF9SbCCRHWAYefmVpDuxK',
+  'coin': 'BTC',
+  'address':14X5ozxbpoEwx7cpdkkx9YZqzSNoobEFbp,
+  'amount': 2000-300000
+};
+
+// Make the API call using Axios
+axios.post(endpoint, params)
+  .then(response => {
+    // Display the transaction ID on the web page
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
